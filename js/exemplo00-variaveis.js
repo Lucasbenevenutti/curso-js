@@ -3,7 +3,7 @@ function apresentarMensagemConsole() {
 }
 
 function apresentarMensagemUsuario(){
-    alert("Minha primeira mensagem no JS para o usuário")
+    alert("Minha primeira mensagem no JS para o usuário");
 }
 
 function exemploVariaveisInteiras(){
@@ -55,5 +55,5 @@ function exemploMercado(){
         "\nPreço Unitário: " + produto2Preco +
         "\nValor: " + produto2Total + 
         "\n\nTotal: " + totalCompra
-    )
+    );
 }
