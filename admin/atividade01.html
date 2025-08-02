@@ -1,63 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/atividade1.css">
+    <link rel="stylesheet" href="../css/atividade1.css">
     <title>Atividade 1 de JS</title>
 </head>
+
 <body>
-    <button onclick="exercicio01()">Exercício01</button>
-    <button onclick="exercicio02()">Exercício02</button>
-    <button onclick="exercicio03()">Exercício03</button>
-    <button onclick="exercicio04()">Exercício04</button>
-    <button onclick="exercicio05()">Exercício05</button>
-    <br>
-    <br>
+    <div class="container-btn">
+        <button class="btn" onclick="exercicio01()">Exercício 01</button>
+        <button class="btn" onclick="exercicio02()">Exercício 02</button>
+        <button class="btn" onclick="exercicio03()">Exercício 03</button>
+        <button class="btn" onclick="exercicio04()">Exercício 04</button>
+        <button class="btn" onclick="exercicio05()">Exercício 05</button>
+    </div>
 
-    <h1>Exercício 06</h1>
-    <h2>Informe os dados do seu computador</h2>
-    <form id="formDadosComputador">
-        <label for="placaMae">Placa Mãe:</label>
-        <input type="text" id="placaMae" name="placaMae">
-        <br>
-        <label for="precoPlacaMae">Preço:</label>
-        <input type="number" id="precoPlacaMae" name="precoPlacaMae" step="0.01">
-        <br>
-        <br>
-        <label for="placaDeVideo">Placa de Vídeo:</label>
-        <input type="text" id="placaDeVideo" name="placaDeVideo">
-        <br>
-        <label for="precoPlacaDeVideo">Preço da Placa de Vídeo:</label>
-        <input type="number" id="precoPlacaDeVideo" name="precoPlacaDeVideo" step="0.01">
-        <br>
-        <br>
-        <label for="processador">Processador</label>
-        <input type="text" id="processador" name="processador">
-        <br>
-        <label for="precoProcessador">Preço do Processador</label>
-        <input type="number" id="precoProcessador" name="precoProcessador" step="0.01">
-        <br>
-        <br>
-        <label for="memoria">Memória RAM:</label>
-        <input type="text" id="memoria" name="memoria">
-        <br>
-        <label for="precoMemoria">Preço da Memória RAM</label>
-        <input type="number" id="precoMemoria" name="precoMemoria" step="0.01">
-        <br>
-        <br>
-        <label for="fonte">Fonte:</label>
-        <input type="text" id="fonte" name="fonte">
-        <br>
-        <label for="precoFonte">Preço da Fonte</label>
-        <input type="number" id="precoFonte" name="precoFonte" step="0.01">
+    <div container-form>
+        <h1>Exercício 06</h1>
+        <h2>Informe os dados do seu computador</h2>
+        <form class="form-exercicio06" id="formDadosComputador">
+            <div class="caixa">
+                <label for="placaMae">Placa Mãe:</label>
+                <input type="text" id="placaMae" name="placaMae">
 
-        <br>
-        <br>
-        <button type="submit" onclick="exercicio06()">Enviar</button>
-    </form>
+                <label for="precoPlacaMae">Preço:</label>
+                <input type="number" id="precoPlacaMae" name="precoPlacaMae" step="0.01">
+            </div>
+            <div class="caixa">
+                <label for="placaDeVideo">Placa de Vídeo:</label>
+                <input type="text" id="placaDeVideo" name="placaDeVideo">
 
+                <label for="precoPlacaDeVideo">Preço da Placa de Vídeo:</label>
+                <input type="number" id="precoPlacaDeVideo" name="precoPlacaDeVideo" step="0.01">
+            </div>
+            <div class="caixa">
+                <label for="processador">Processador</label>
+                <input type="text" id="processador" name="processador">
+
+                <label for="precoProcessador">Preço do Processador</label>
+                <input type="number" id="precoProcessador" name="precoProcessador" step="0.01">
+            </div>
+            <div class="caixa">
+                <label for="memoria">Memória RAM:</label>
+                <input type="text" id="memoria" name="memoria">
+
+                <label for="precoMemoria">Preço da Memória RAM</label>
+                <input type="number" id="precoMemoria" name="precoMemoria" step="0.01">
+            </div>
+            <div class="caixa">
+                <label for="fonte">Fonte:</label>
+                <input type="text" id="fonte" name="fonte">
+
+                <label for="precoFonte">Preço da Fonte</label>
+                <input type="number" id="precoFonte" name="precoFonte" step="0.01">
+            </div>
+            <button class="btn" type="submit" onclick="exercicio06()">Enviar</button>
+
+        </form>
+    </div>
 
     <script src="../js/atividade1.js"></script>
 </body>
+
 </html>
