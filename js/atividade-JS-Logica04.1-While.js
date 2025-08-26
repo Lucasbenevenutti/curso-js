@@ -6,7 +6,9 @@ function exercicio01() {
     let quantidade = 0
     let maiorPreço = 0;
     let NomeMaisCaro = "";
-
+    let produtos = "";
+    let preços = "";
+    let todos = "";
 
 
     while (desejaCadastrar === true) {
@@ -26,6 +28,10 @@ function exercicio01() {
         }
 
         quantidade = quantidade + 1;
+        
+        produtos = produtos + produto;
+        preços = preços + preço;
+        todos = produtos.padEnd(20, " ") + preços.padEnd(20, " "); 
 
         desejaCadastrar = confirm("Deseja cadastrar outro produto?");
     }
@@ -36,7 +42,20 @@ function exercicio01() {
         "\nNome do produto mais caro: " + NomeMaisCaro
     );
 
-    
+    console.log("Produtos".padEnd(20, " ") + "Preços".padEnd(20, " ") + "\n" + produtos.padEnd(20, " ") + preços);
 
+}
 
+function preenchimentoTabela() {
+    let paciente1 = "Ana Silva";
+    let paciente2 = "Augusto Primeiro";
+    let idade1 = 28;
+    let idade2 = 26;
+
+    console.log(" -----------------------------------------" +
+        "\n| Nome                 | Idade            |" +
+        "\n -----------------------------------------" +
+        "\n| " + paciente1.padEnd(20, " ") + " | " + idade1.toString().padEnd(16, " ") + " |" +
+        "\n| " + paciente2.padEnd(20, " ") + " | " + idade2.toString().padEnd(16, " ") + " |" +
+        "\n -----------------------------------------")
 }
