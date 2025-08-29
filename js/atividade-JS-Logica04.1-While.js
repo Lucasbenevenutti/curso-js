@@ -60,10 +60,6 @@ function exercicio02() {
     let linhasInvalidas = "";
 
 
-
-
-
-
     let frase = prompt("Digite uma linha no seguinte formato id;nome;cpf;aaaa-mm-dd");
     let partes = frase.split(";");
 
@@ -81,10 +77,7 @@ function exercicio02() {
             }
 
 
-
-
             indice = indice + 1;
-
 
 
         }
@@ -142,7 +135,6 @@ function exerciciogit13() {
         } else if (sexo === "M") {
             jogadoresM = jogadoresM + 1;
         }
-
         if (quantidadeAmarelos < menorAmarelos) {
             nomeMenorAmarelos = nomeJogador;
             menorAmarelos = quantidadeAmarelos;
@@ -168,8 +160,6 @@ function exerciciogit13() {
             menorVermelhos = quantidadeVermelhos;
         }
 
-
-
         indice = indice + 1;
     }
 
@@ -186,23 +176,4 @@ function exerciciogit13() {
         "\nJogador com a menor quantidade de cartões vermelhos: " + nomeMenorVermelhos
     );
 
-
 }
-
-/**function tamanhoDaString() {
-    let texto = "Oi, tudo bem?";
-    let tamanho = texto.length;
-
-    alert("Texto: '" + texto + "'\nTamaho: " + tamanho);
-    /*
-        Cenários de uso:
-        Ex. 02: Validação de CPF:
-            691.735.128-43 
-            min: 14
-            max: 14
-        Ex. 01: Validação de nome: 
-            Nome Completo:
-            max: 200
-            min: 7
-    
-}*/
