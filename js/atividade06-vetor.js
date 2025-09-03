@@ -181,12 +181,12 @@ function descobrirLivroMaisCaro() {
 function descobrirLivroMaisBarato() {
     let livroMaisBarato = "";
     let precoMaisBarato = 99999999;
-    
-    for(i = 0; i < titulos.length; i = i + 1){
+
+    for (i = 0; i < titulos.length; i = i + 1) {
         livroBarato = titulos[i];
         precoBarato = precos[i];
 
-        if(precoBarato < precoMaisBarato) {
+        if (precoBarato < precoMaisBarato) {
             precoMaisBarato = precoBarato;
             livroMaisBarato = livroBarato;
         }
@@ -195,13 +195,50 @@ function descobrirLivroMaisBarato() {
 }
 
 function listaTitulosPrecosTecnologia() {
-    let titulosTec = [];
-    let precosTec = [];
 
-    for(i = 0; i < titulos.length; i = i + 1){
+    let unico = [];
+    let tec = "Tecnologia"
+
+    for (i = 0; i < titulos.length; i = i + 1) {
         let titulosTecnologia = titulos[i];
-        let precosTecnologia = precos [i];
+        let precosTecnologia = precos[i];
         let categoriaTec = categorias[i];
 
+        if (categoriaTec === tec) {
+            unico.push(" - " + titulosTecnologia + " - " + precosTecnologia + "R$");
+        }
     }
+    alert(`Lista de livros de tecnologia: \n ${unico.join("\n")}`);
+}
+
+function listaTitulosAnosRomance() {
+
+    let lista = [];
+    let determinada = "Romance";
+
+    for (i = 0; i < titulos.length; i = i + 1) {
+        let titulosRomance = titulos[i];
+        let anosRomance = anoPublicaçao[i];
+        let categoriaRomance = categorias[i];
+
+        if (categoriaRomance === determinada) {
+            lista.push(" - " + titulosRomance + " - " + anosRomance);
+        }
+    }
+    alert(`Lista de livros e anos da categoria romance: \n${lista.join("\n")}`);
+}
+
+function listaJavascript() {
+
+    let listaJava = [];
+    let determinada = "javascript";
+
+    for (i = 0; i < titulos.length; i = i + 1) {
+        let titulosJavascript = titulos[i].toLowerCase();
+
+        if (titulosJavascript.includes(determinada)){
+            listaJava.push(" - " + titulosJavascript);
+        }
+    }
+    alert(`Lista de livros que tenham a palavra Javascript: \n${listaJava}`)
 }
